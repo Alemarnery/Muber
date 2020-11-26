@@ -12,9 +12,6 @@ if (process.env.NODE_ENV !== "test") {
 app.use(bodyParser.json());
 routes(app);
 
-app.use((err, req, res, next) => {
-  res.statys(422).send({ error: err.message });
-  console.log(err);
-});
+app.use((err, req, res, next) => {});
 
 module.exports = app;
