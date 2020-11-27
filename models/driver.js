@@ -11,7 +11,10 @@ const DriverSchema = new Schema({
     type: String,
     required: true,
   },
-
+  driving: {
+    type: Boolean,
+    default: false,
+  },
   geometry: PointSchema,
 });
 
