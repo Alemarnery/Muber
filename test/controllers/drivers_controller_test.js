@@ -20,7 +20,7 @@ describe("Drivers controller", () => {
     });
   });
 
-  it("PUT to /api/drivers/id edits an existing driver", (done) => {
+  it("PUT to /api/drivers/id edits an existing driver ", (done) => {
     const driver = new Driver({ email: "t@t.com", driving: false });
     driver.save.then(() => {
       request(app)
